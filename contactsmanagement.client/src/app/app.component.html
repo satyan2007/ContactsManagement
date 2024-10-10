@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Contact Manager</h1>
+  
+  <button class="btn btn-primary" (click)="onAddNewContact()">Add New Contact</button>
+  <app-contact-form *ngIf="showForm"
+                    [contactToEdit]="contactToEdit"
+                    (contactAdded)="onContactAdded($event)"
+                    (cancel)="onCancelEdit()">
+  </app-contact-form> 
+
+  <app-contact-list [contacts]="contacts"
+                    (editContact)="onEditContact($event)"
+                    (deleteContact)="onDeleteContact($event)">
+  </app-contact-list>
+</div>
+
+

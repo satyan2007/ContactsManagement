@@ -1,0 +1,6 @@
+@ContactsManagement.Server_HostAddress = http://localhost:5148
+
+GET {{ContactsManagement.Server_HostAddress}}/Contacts/
+Accept: application/json
+
+###

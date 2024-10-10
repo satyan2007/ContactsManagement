@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>{{ isEditing ? 'Edit Contact' : 'Add New Contact' }}</h2>
+
+      <!-- Reactive Form for Contact -->
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" id="firstName" class="form-control" formControlName="firstName" required />
+          <div *ngIf="contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched" class="text-danger">
+            First Name is required.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" id="lastName" class="form-control" formControlName="lastName" required />
+          <div *ngIf="contactForm.get('lastName')?.invalid && contactForm.get('lastName')?.touched" class="text-danger">
+            Last Name is required.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" formControlName="email" required />
+          <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+            Valid Email is required.
+          </div>
+        </div>
+
+        <div class="mb-3 button-container">
+          <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">
+            {{ isEditing ? 'Update Contact' : 'Add Contact' }}
+            </button>
+          <button type="button" class="btn btn-secondary" (click)="onCancel()">Cancel</button>          
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

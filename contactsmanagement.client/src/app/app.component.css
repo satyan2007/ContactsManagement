@@ -1,0 +1,20 @@
+/* src/app/app.component.scss */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.contact-list {
+  margin-top: 30px;
+}
+
+.contact-form {
+  margin-bottom: 30px;
+}

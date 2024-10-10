@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactsManagement.Server", "ContactsManagement.Server\ContactsManagement.Server.csproj", "{ECDB6CE3-4338-41C0-BB35-E126F35EF202}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "contactsmanagement.client", "contactsmanagement.client\contactsmanagement.client.esproj", "{053B4723-C079-480D-A0B5-DAC81BFE6E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECDB6CE3-4338-41C0-BB35-E126F35EF202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDB6CE3-4338-41C0-BB35-E126F35EF202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDB6CE3-4338-41C0-BB35-E126F35EF202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDB6CE3-4338-41C0-BB35-E126F35EF202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053B4723-C079-480D-A0B5-DAC81BFE6E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{053B4723-C079-480D-A0B5-DAC81BFE6E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{053B4723-C079-480D-A0B5-DAC81BFE6E5C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{053B4723-C079-480D-A0B5-DAC81BFE6E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{053B4723-C079-480D-A0B5-DAC81BFE6E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{053B4723-C079-480D-A0B5-DAC81BFE6E5C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89C29A90-F2D6-472A-9F32-7F41909E5DC6}
+	EndGlobalSection
+EndGlobal
